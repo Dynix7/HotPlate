@@ -6126,6 +6126,18 @@
 		(uuid "4b019d66-6d6a-4351-b535-087cd04282bf")
 	)
 	(no_connect
+		(at 237.49 101.6)
+		(uuid "55eae8f2-92f6-4923-8a4d-f35000c2b3fb")
+	)
+	(no_connect
+		(at 237.49 86.36)
+		(uuid "5ba2b6dc-95a1-4f53-8660-4bdf5967d592")
+	)
+	(no_connect
+		(at 237.49 99.06)
+		(uuid "5ca3a3e4-7b84-44aa-8673-019b7a25de97")
+	)
+	(no_connect
 		(at 237.49 68.58)
 		(uuid "9afa0e6a-8a76-4909-b727-bc67b09f61b9")
 	)
@@ -6154,16 +6166,8 @@
 		(uuid "c01a207c-8a40-4e6c-9006-24858b577d3f")
 	)
 	(no_connect
-		(at 237.49 121.92)
-		(uuid "c503d816-2be8-4970-aaba-9052b7a5e454")
-	)
-	(no_connect
 		(at 237.49 45.72)
 		(uuid "c592d521-4700-44ac-946d-928f6bd19981")
-	)
-	(no_connect
-		(at 237.49 116.84)
-		(uuid "d2f80f2c-41bd-4710-87ba-5c72baae9543")
 	)
 	(no_connect
 		(at 237.49 53.34)
@@ -6222,6 +6226,16 @@
 			(type default)
 		)
 		(uuid "0468cc9e-f8c2-4ff7-9697-5ab81ff66210")
+	)
+	(wire
+		(pts
+			(xy 237.49 91.44) (xy 243.84 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04ea5a7c-0e27-40f4-906d-ec52d055ea4c")
 	)
 	(wire
 		(pts
@@ -6395,6 +6409,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 116.84) (xy 243.84 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bde03dc-41ab-4cdc-b7f0-50896c7b2592")
+	)
+	(wire
+		(pts
 			(xy 125.73 129.54) (xy 132.08 129.54)
 		)
 		(stroke
@@ -6445,7 +6469,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 88.9) (xy 243.84 88.9)
+			(xy 237.49 121.92) (xy 243.84 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6482,16 +6506,6 @@
 			(type default)
 		)
 		(uuid "24ebc85e-095c-4440-8bad-d4a2f9cdfd26")
-	)
-	(wire
-		(pts
-			(xy 237.49 91.44) (xy 243.84 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2505818c-201b-47bd-be11-f0e9a01ca887")
 	)
 	(wire
 		(pts
@@ -6735,6 +6749,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 119.38) (xy 153.67 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486c6117-ebf7-4cac-a417-7ecf0f2afe53")
+	)
+	(wire
+		(pts
 			(xy 212.09 129.54) (xy 212.09 133.35)
 		)
 		(stroke
@@ -6935,6 +6959,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 88.9) (xy 243.84 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5caec25b-93a9-41d2-b710-a0df12a65407")
+	)
+	(wire
+		(pts
 			(xy 105.41 116.84) (xy 105.41 119.38)
 		)
 		(stroke
@@ -7062,16 +7096,6 @@
 			(type default)
 		)
 		(uuid "6bf33f36-4705-427d-83e8-588d0f4f0b36")
-	)
-	(wire
-		(pts
-			(xy 146.05 119.38) (xy 153.67 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "713e48fc-50f6-4a32-a544-60b448bb2dda")
 	)
 	(wire
 		(pts
@@ -7222,16 +7246,6 @@
 			(type default)
 		)
 		(uuid "794a8704-f144-4c08-a66b-7b985d5f23f7")
-	)
-	(wire
-		(pts
-			(xy 237.49 86.36) (xy 243.84 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79852b3e-2d84-466c-a977-a64208c46f8a")
 	)
 	(wire
 		(pts
@@ -7602,16 +7616,6 @@
 			(type default)
 		)
 		(uuid "a4de6852-7e6a-4864-8a75-93470c63adba")
-	)
-	(wire
-		(pts
-			(xy 237.49 101.6) (xy 243.84 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5c37d94-91e6-4995-9416-b2c59d7f72b6")
 	)
 	(wire
 		(pts
@@ -8285,6 +8289,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 118.11) (xy 146.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc97235f-b3f7-47fa-bb60-ab18a9131aa7")
+	)
+	(wire
+		(pts
 			(xy 250.19 102.87) (xy 250.19 106.68)
 		)
 		(stroke
@@ -8625,16 +8639,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 99.06) (xy 243.84 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4648c9b-adeb-4122-b804-165fff1b45a5")
-	)
-	(wire
-		(pts
 			(xy 41.91 180.34) (xy 41.91 179.07)
 		)
 		(stroke
@@ -8834,7 +8838,7 @@
 		(uuid "149e876e-9e2c-4cee-94e4-4682022eba6a")
 	)
 	(label "BTN1"
-		(at 243.84 88.9 180)
+		(at 243.84 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8914,7 +8918,7 @@
 		(uuid "4180f420-1cf7-40a8-9447-e5102dfd9e22")
 	)
 	(label "HOT"
-		(at 243.84 101.6 180)
+		(at 243.84 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9064,7 +9068,7 @@
 		(uuid "76c66ee5-dbed-4e4e-ae7b-d078c46348e5")
 	)
 	(label "BTN0"
-		(at 243.84 86.36 180)
+		(at 243.84 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9142,16 +9146,6 @@
 			(justify right bottom)
 		)
 		(uuid "a2038704-1c11-4349-9de3-28a15c2596dc")
-	)
-	(label "STATUS"
-		(at 243.84 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a8c0b7ca-1e9b-40c3-92df-c46203958e8e")
 	)
 	(label "SCL"
 		(at 39.37 177.8 180)
@@ -9264,7 +9258,7 @@
 		(uuid "d31da377-2773-4c5e-b8cc-44eabf556773")
 	)
 	(label "BTN2"
-		(at 243.84 91.44 180)
+		(at 243.84 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9332,16 +9326,6 @@
 			(justify right bottom)
 		)
 		(uuid "f9b5714d-4ee4-4842-9792-3bfa64de194d")
-	)
-	(label "STATUS"
-		(at 146.05 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fa8831c2-ca2d-4e76-8f47-17063a037d39")
 	)
 	(label "RESET"
 		(at 55.88 176.53 0)
@@ -15499,6 +15483,71 @@
 			(project "HotPlate"
 				(path "/cd7b1ccb-f245-4cda-a4ed-50660074b2f5"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 146.05 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea379ea0-44d7-447e-8619-8400fe27e927")
+		(property "Reference" "#PWR031"
+			(at 146.05 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 146.558 114.046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 146.05 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b136a4ca-09a9-42c3-90bb-ba9eed45bd35")
+		)
+		(instances
+			(project ""
+				(path "/cd7b1ccb-f245-4cda-a4ed-50660074b2f5"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
