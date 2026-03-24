@@ -34,16 +34,32 @@
 
 
 enum PLATESTATE {
-    INIT = -1,
-    STARTUP,
+    INIT,
     IDLE,
     ADJUST_TEMP,
+    ADJUST_TIMES,
+    ADJUST_RATES,
     HEATING,
     STOPPED
 }
 
-struct TEMPERATURES {
-    double targetTemp = 0.0;
+enum HEATSTATE {
+    START,
+    RAMPSOAK,
+    SOAK,
+    RAMPREFLOW,
+    REFLOW,
+    COOLING,
+    END
+}
+//Stores the Reflow  Profile
+struct HEATINGPROFILE {
+    enum HEATSTATE heatState = START;
+
+    double targetTemps[2] = {0}; // Soak Temp, Reflow Temp-Celsius
+    int targetTimes[2] = {0}; //Length of Soak Plataeu, Length of Reflow Plataeu-Seconds
+    double targetRates[3] = {0}; // Start->Soak, Soak->Reflow, Reflow->End  -  Celsius/Second
+
     double currentTempC = 0.0;
     double currentTempF = 0.0;
 }
