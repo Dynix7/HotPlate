@@ -23,6 +23,7 @@
 #define ANALOG_RES 4095
 #define B_VALUE 3950
 
+#define READ_RATE 1.0/20
 
 //Screen Related Variables
 #define SCREEN_WIDTH 128
@@ -57,9 +58,22 @@ struct HEATINGPROFILE {
     enum HEATSTATE heatState = START;
 
     double targetTemps[2] = {0}; // Soak Temp, Reflow Temp-Celsius
-    int targetTimes[2] = {0}; //Length of Soak Plataeu, Length of Reflow Plataeu-Seconds
+    double targetTimes[2] = {0}; //Length of Soak Plataeu, Length of Reflow Plataeu-Seconds
     double targetRates[3] = {0}; // Start->Soak, Soak->Reflow, Reflow->End  -  Celsius/Second
 
+    double currentTempTarget = 0.0;
+
+    double timeFromStart = 0.0;
     double currentTempC = 0.0;
     double currentTempF = 0.0;
+}
+
+struct CONTROL {
+    double Kp = 0.0;
+    double Ki = 0.0;
+    
+    double deltaTime = READ_RATE;
+    
+    double error = 0.0;
+    double prevError = 0.0;
 }

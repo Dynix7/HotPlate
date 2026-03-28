@@ -27,6 +27,10 @@ class HotPlateScreen {
 
         void displayButtons(string A, string B, string C, String D);
 
+        void displayCurve();
+
+        void displayParameters();
+        
     public:
         HotPlateScreen(Adafruit_SSD1306 *pScreen, struct HEATINGPROFILE *pProfile, enum PLATESTATE *givenState);
 

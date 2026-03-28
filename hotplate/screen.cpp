@@ -27,7 +27,7 @@ void HotPlateScreen::initScreen() {
     screenTickStart = getTime();
 }
 
-void HotPlateScreen::displayButtons(string A, string B, string C, string D) {
+void HotPlateScreen::displayButtons(char *A, char *B, char *C, char *D) {
     Screen->setTextSize(1);
 
     Screen->setCursor(0, row0);
@@ -43,6 +43,44 @@ void HotPlateScreen::displayButtons(string A, string B, string C, string D) {
     Screen->print(D);
 }
 
+void HotPlateScreen::displayCurve() {
+    Screen->drawLine(0, SCREEN_HEIGHT, 25, row6, SSD1306_WHITE);
+    Screen->drawLine(25, row6, 60, row6, SSD1306_WHITE);
+    Screen->drawLine(60, row6, 75, row4, SSD1306_WHITE);
+    Screen->drawLine(75, row4, 100, row4, SSD1306_WHITE);
+    Screen->drawLine(100, row4, SCREEN_WIDTH, SCREEN_HEIGHT, SSD1306_WHITE);
+}
+
+void HotPlateScreen::displayParameters() {
+    // Start->Soak Rate
+    Screen->setCursor(0, row2);
+    Screen->print(profile->targetRates[0], 1);
+
+    //Soak Temp
+    Screen->setCursor(35, row2);
+    Screen->print(profile->targetTemps[0], 0);
+
+    //Soak Time
+    Screen->setCursor(35, row3);
+    Screen->print(profile->targetTimes[0], 0);
+
+    //Soak-> Reflow Rate
+    Screen->setCursor(60, row7);
+    Screen->print(profile->targetRates[1], 1);
+
+    //Reflow Temp
+    Screen->setCursor(75, row2);
+    Screen->print(profile->targetTemps[1], 0);
+
+    //Reflow Time
+    Screen->setCursor(75, row3);
+    Screen->print(profile->targetTimes[1], 0);
+
+    // Reflow->End 
+    Screen->setCursor(110, row2);
+    Screen->print(profile->targetRates[2], 1);
+}
+
 void HotPlateScreen::updateScreen() {
     screenDeltaTime = getTime() - screenTickStart;
 
@@ -52,7 +90,18 @@ void HotPlateScreen::updateScreen() {
         Screen->clearDisplay();
 
         switch (*state) {
-            case 
+            case INIT:
+                Screen->setTextSize(2);
+
+                Screen->setCursor(0, row3);
+                Screen->print("STARTUP :D");
+            
+            case IDLE:
+                displayButtons("START", "EDIT", "", "");
+                Screen->setTextSize(1);
+
+                Screen->displayCurve();
+                Screen->displayParameters();
         }
     }
 }
