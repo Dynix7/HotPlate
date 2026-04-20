@@ -47,6 +47,6 @@ void setup() {
 
 void loop() {
 
-
+  SCREEN.updateScreen();
 
 }
